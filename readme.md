@@ -14,6 +14,6 @@ jspm install
 You can build the project with
 
 ```shell
-npm build
+npm run build
 ```
 
