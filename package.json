@@ -13,7 +13,12 @@
     },
     "overrides": {
       "npm:dot-prop@4.0.0": {
-        "format": "esm"
+        "format": "cjs",
+        "meta": {
+          "*.js": {
+            "loader": "babel"
+          }
+        }
       }
     }
   },
