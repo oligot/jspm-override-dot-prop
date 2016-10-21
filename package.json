@@ -1,28 +1,30 @@
 {
   "scripts": {
-    "build": "jspm bundle-sfx app --minify"
+    "build": "jspm build app.js --minify"
   },
   "jspm": {
     "dependencies": {
       "dot-prop": "npm:dot-prop@^4.0.0"
     },
     "devDependencies": {
-      "babel": "npm:babel-core@^5.8.24",
-      "babel-runtime": "npm:babel-runtime@^5.8.24",
-      "core-js": "npm:core-js@^1.1.4"
+      "core-js": "npm:core-js@^1.1.4",
+      "fs": "github:jspm/nodelibs-fs@^0.2.0-alpha",
+      "path": "github:jspm/nodelibs-path@^0.2.0-alpha",
+      "plugin-babel": "npm:systemjs-plugin-babel@^0.0.16",
+      "process": "github:jspm/nodelibs-process@^0.2.0-alpha"
     },
     "overrides": {
       "npm:dot-prop@4.0.0": {
         "format": "cjs",
         "meta": {
           "*.js": {
-            "loader": "babel"
+            "loader": "plugin-babel"
           }
         }
       }
     }
   },
   "devDependencies": {
-    "jspm": "0.16.46"
+    "jspm": "0.17.0-beta.29"
   }
 }
