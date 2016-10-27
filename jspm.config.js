@@ -27,7 +27,8 @@ SystemJS.config({
     "optional": [
       "runtime",
       "optimisation.modules.system"
-    ]
+    ],
+    "modularRuntime": false
   }
 });
 

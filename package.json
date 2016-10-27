@@ -15,10 +15,10 @@
     },
     "overrides": {
       "npm:dot-prop@4.0.0": {
-        "format": "cjs",
         "meta": {
           "*.js": {
-            "loader": "plugin-babel"
+            "loader": "plugin-babel",
+            "format": "cjs"
           }
         }
       }
